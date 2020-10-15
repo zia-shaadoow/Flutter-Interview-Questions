@@ -27,13 +27,30 @@ Title: Flutter Interview Questions
 ---
 
 * What is the difference between a `StatelessWidget` and a `StatefulWidget` in Flutter?
+As we all know the flutter app consists of widgets only, these are broadly classified into two types: 
+
+Stateless Widget
+Stateful Widget
+Stateless Widget:
+ Stateless widgets are the widgets that don’t change i.e. they are immutable. Its appearance and properties remain unchanged throughout the lifetime of the widget. In simple words, Stateless widgets cannot change their state during the runtime of the app, which means the widgets cannot be redrawn while the app is in action. 
+Examples: Icon, IconButton, and Text are examples of stateless widgets. 
+Stateful Widget: 
+Stateful Widgets are the ones that change its properties during run-time. They are dynamic i.e., they are mutable and can be drawn multiple times within its lifetime. It can change its appearance in response to events triggered by user interactions or when it receives data. 
+Examples : Checkbox, Radio Button, Slider, InkWell, Form, and TextField are examples of Stateful widgets. 
 * Explain the  Stateful Widget Lifecycle?
+  https://www.developerlibs.com/2019/12/flutter-lifecycle-widgets.html
 * When do you use the `WidgetsBindingObserver`?
+  https://medium.com/@marcoleong.developer/lifecycle-in-flutter-widgetsbindingobserver-2eb782236f8b
 * What is Flutter tree shaking?
+  https://medium.com/flutter/optimizing-performance-in-flutter-web-apps-with-tree-shaking-and-deferred-loading-535fbe3cd674#:~:text=Tree%20shaking%20by%20default,generated%20by%20the%20dart2js%20compiler.&text=Tree%20shaking%20is%20the%20process,is%20guaranteed%20to%20be%20executed.
 * What is a `Spacer` widget?
+  https://medium.com/@yubarajpoudel708/spacer-widget-f3bf1e9a4316
 * What is the difference between hot restart and hot reload?
+  https://flutter.dev/docs/development/tools/hot-reload
 * What is an `InheritedWidget`? List some examples.
+  https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html
 * Why is the `build()` method on `State` and not `StatefulWidget`s?
+https://github.com/flutter/flutter/issues/8794
 * What is a pubspec file in Dart?
 * How is Flutter native?
 * What is a `Navigator` and what are `Routes` in Flutter?
